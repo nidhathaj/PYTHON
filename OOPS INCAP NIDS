@@ -1,0 +1,22 @@
+class rect:
+    company="nids"
+    def set_dim(self,name,age,salary):
+        self.name=name
+        self.age=age
+        self.salary=salary
+    def tax(self):
+        return self.salary*10//100
+    def dis(self):
+        print("company; ",rect.company)
+        print("name; ",self.name)
+        print("salary; ",self.salary)
+        print("age; ",self.age)
+        print("tax:",self.tax())
+        
+        
+        
+        
+        
+a=rect() 
+a.set_dim("raju",45,9000)
+a.dis()
