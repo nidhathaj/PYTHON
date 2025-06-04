@@ -1,0 +1,5 @@
+class simple:
+    def rectangle(self,length,breath):
+        print(length*breath)
+r=simple()
+r.rectangle(3,6)
