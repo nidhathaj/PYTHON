@@ -1,0 +1,6 @@
+file=open(".txt","w")
+file.write("hi all welcome\n")
+file.write("rocking star \n")
+file.close()
+print("content written to .txt successfully")
+
