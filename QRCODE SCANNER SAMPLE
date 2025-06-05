@@ -1,0 +1,7 @@
+import QRCode
+text="today day 8 i hope all are listening"
+r=qrcode.QRCode()
+r.add_data(text)
+r.make(fit=true)
+img=r.make_image(fill_color="black",back_color="white")
+img.save("day8.png")
