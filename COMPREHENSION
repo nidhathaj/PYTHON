@@ -1,0 +1,2 @@
+uni_lengths={len(word) for word in ["hi","hello","python","hi"]}
+print(uni_lengths)
