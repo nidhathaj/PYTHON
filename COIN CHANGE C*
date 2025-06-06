@@ -1,0 +1,10 @@
+class Solution(object):
+    def coinChange(self, coins, amount):
+        a=sorted(coins)
+        print(coins,reverse=True)
+        while amount !=0:
+            for i in a:
+                if amount >=i:
+                    print(i,end=" ")
+                    amount=amount-i
+                    break        
