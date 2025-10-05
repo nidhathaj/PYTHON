@@ -1,0 +1,9 @@
+mrp=int(input("Enter your MRP:"))
+gaddgets=int(input("Enter your Gaddgets:"))
+total=mrp+gaddgets
+if gaddgets<17:
+    discount = 10/100*total
+    print("Your total is 10 offer ",total-discount)
+else:
+    discount = 15/100*total
+    print("Your total is 15 offer ",total-total)
