@@ -1,0 +1,8 @@
+name=input("Enter your name")
+vowel="aeiouAEIOU"
+new_name=''
+for char in name:
+    if char not in vowel:
+        new_name += char
+
+print("Your name without the vowel is:"+new_name)
