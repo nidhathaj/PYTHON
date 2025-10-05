@@ -1,0 +1,11 @@
+try:
+    num1=int(input("num1"))
+    num2=int(input("num2"))
+    mum3=num1/num2
+    print("mum3",mum3)
+except ZeroDivisionError as z:
+    print("0 / error",z)
+except ValueError as v:
+    print("value not match",v)
+except Exception as e:
+    print("some error",e)
