@@ -1,0 +1,5 @@
+base=int(input("enter base:"))
+gst=base+(base*20/100)
+tax=base+(base*17/100)
+total=(gst+tax)
+print("total is:",total)
