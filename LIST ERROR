@@ -1,0 +1,10 @@
+try:
+    numb=[1,2,3,]
+    n1=int(input("n1(0-2)"))
+    print("index num are:",numb[n1])
+except IndexError as i:
+    print("index error",i)
+except ValueError as v:
+    print("value not match",v)
+except  Exception as e:
+    print("some error",e)
