@@ -1,0 +1,15 @@
+for i in sentence:
+    if i.isdigit():
+        integers.append(i)
+    elif i.isalpha():
+        strings.append(i)
+
+if len(strings) == 0:
+    print("There are no strings in this sentence")
+else:
+    print("Length of string value is", len(strings))
+
+if len(integers) == 0:
+    print("There are no integers in this sentence")
+else:
+    print("Length of integer value is", len(integers))
