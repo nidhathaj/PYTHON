@@ -1,0 +1,13 @@
+import hashlib
+wordlist=["orange","apple","qwert","1234"]
+reallpw="orange"
+storedhash=hashlib.sha256(reallpw.encode()).hexdigest()
+print("storedhashes:",storedhash)
+found=None
+for w in wordlist:
+    if hashlib.sha256(w.encode()).hexdigest()==storedhash:
+        print("matched:",w)
+        found = w
+        break
+    if not found:
+        print("notmatched")
