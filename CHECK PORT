@@ -1,0 +1,17 @@
+import socket
+def port_check(host,port):
+    try:
+            with socket.socket(socket.AF_INET,socket.SOCK_STREAM)  as s:
+                s.settimeout(1)
+                result=s.connect_ex((host,port))
+                return result == 0
+    except:
+        return False
+
+host="localhost"
+for port in range(1,1025):
+    if port_check(host,port):
+        print(f"Port is open{port}")
+    else:
+        print(f"Port is close{port}")
+
