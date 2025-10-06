@@ -1,0 +1,26 @@
+import socket
+def port_check(host,port):
+    try:
+        with socket.socket(socket.AF_INET,socket.SOCK_STREAM)  as s:
+            s.settimeout(1)
+            result=s.connect_ex((host,port))
+            return result == 0
+    except socket.error:
+        return False
+
+def main():
+    host="localhost"
+    try:
+        port=int(input("Enter the port number: "))
+    except ValueError:
+        print("invalid port")
+        return
+
+    openport = port_check(host,port)
+    if openport:
+        print("Port is open")
+    else:
+        print("Port is close")
+
+if __name__=="__main__":
+    main()
