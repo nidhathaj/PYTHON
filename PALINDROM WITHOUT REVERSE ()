@@ -1,0 +1,9 @@
+string=input("Enter a string: ")
+string=string.lower()
+reverse=""
+for char in string:
+    reverse += char
+if reverse==string:
+    print("The reversed string is ",reverse)
+else:
+    print("The reversed string is not ",reverse)
